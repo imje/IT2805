@@ -1,0 +1,19 @@
+1) We can get a three-dimensional context by using Web Graphics Library (WebGL).
+
+2) 
+function fillcircle(centerx, centery, radius ) {
+	context.beginPath();
+	context.arc(centerx, centery, radius, 0, 2 * Math.PI);
+	context.fillStyle = “blue”;
+	context.fill();	
+}
+3)  
+const countries = ['Norway', 'Sweden', 'Denmark', 'New Zealand'];
+countriesStartingWithN = [];
+
+function starting_with_n(country) {
+	return country[0] == 'N'; 
+}
+
+countriesStartingWithN.push(countries.filter(starting_with_n));
+ 

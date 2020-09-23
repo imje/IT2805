@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Income greather than 500 000</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+  </head>
+  <body>
+    <script>
+		//part 1
+		var i = 0;
+		for (i; i < taxForms.length; i++) {
+			if (taxForms[i]["income"] > 500000) {
+				console.log(taxForms[i]["realName"]); //logs the real names of the superheroes with an income greater than 500000.
+			}
+		}
+    </script>
+  </body>
+</html>

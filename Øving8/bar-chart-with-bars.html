@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tax forms: Bar chart with bars</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+  </head>
+  <body>
+
+    <canvas id="chart" width="700" height="550"></canvas>
+
+    <script>
+      const canvas = document.getElementById('chart');
+      const context = canvas.getContext('2d');
+
+      /* Draw a line from (fromX, fromY) to (toX, toY) */
+      function drawLine(fromX, fromY, toX, toY) {
+        context.beginPath();
+        context.moveTo(toX, toY);
+        context.lineTo(fromX, fromY);
+        context.stroke();
+      }
+
+      /* Draw a text (string) on (x, y) */
+      function drawText(text, x, y) {
+        context.fillStyle = 'black';
+        context.fillText(text, x, y);
+      }
+
+      /* Draw a text and with a line to its right */
+      function drawLineWithText(text, fromX, fromY, toX, toY) {
+        drawText(text, fromX - 50, fromY + 10);
+        drawLine(fromX, fromY, toX, toY);
+      }
+
+      /* Insert your code here. */
+		//part2
+		var i = 0;
+		var y = 50; //y-coordinate
+		var t = 1000000; //text for money
+		for (i; i < 10; i++) {
+			drawLineWithText(t,200,y,600,y);
+			y+=50; //50 in y-aksen equals to 100000.
+			t-=100000;
+		}
+		
+		//part3
+		//draws a rectangle and fills it with color.
+		function colorful_rectangle(thecolor, x, y, width, height) {
+			context.beginPath();
+			context.fillStyle = thecolor; 
+			context.fillRect(x,y, width, height);
+			context.stroke();
+		}
+		
+		colorful_rectangle("red", 610,50, 50, 20);
+		colorful_rectangle("blue", 610,80, 50, 20);
+		drawText("Income", 665, 60);
+		drawText("Wealth", 665, 95);
+		
+		
+		//part4
+		
+		var i = 0;
+		var r = 250; //starting x-coorinate for income
+		var b = 290;//starting x-coorinate for wealth
+		for (i; i < taxForms.length; i++) {
+			colorful_rectangle("red",r, 550-((taxForms[i]["income"]/100000)*50), 35, ((taxForms[i]["income"]/100000)*50));
+			r+=110;
+			colorful_rectangle("blue",b,550-((taxForms[i]["wealth"]/100000)*50), 35, ((taxForms[i]["wealth"]/100000)*50));
+			b+=110;
+		}
+		
+
+		
+    </script>
+  </body>
+</html>
