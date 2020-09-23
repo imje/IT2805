@@ -1,0 +1,54 @@
+article {
+    max-width: 75ch;
+	min-width: 65ch;
+    margin: auto;
+	font-family: Verdana;
+	font-size: 20px;
+	color: #323232;
+	line-height: 150%;
+	
+}
+
+/*@media all and (max-width: 70ch) and (min-width: 65ch) {article{font-size:18px}}
+@media all and (max-width: 75ch) and (min-width: 70ch) {article{font-size:22px}}*/
+
+
+h1 {
+    font-size: 3em;
+	margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p, blockquote, ul, ol {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#facts {
+    margin: 1em 0em 1em 1em;
+    width: 50%;
+    border: 1px dashed;
+    float: right;
+}
+
+#facts > ul {
+    list-style-image: url('cup-icon.svg');
+    line-height: 1.5em;
+    padding-left: 1.5em;
+}
+
+img{
+	width: 100%;
+}
+
+header{
+	border-bottom: 1px solid black;
+	
+}
+
+body{
+	background-color: lightgray;
+}

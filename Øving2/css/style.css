@@ -1,0 +1,23 @@
+/* CSS Document */
+
+header {
+	color:#101010;
+	font-family: "Times New Roman";
+}
+
+body {
+	background-color: lightslategrey;
+}
+
+p{
+	color: black;
+	font-family: "Liberation Serif", Times, "Times New Roman", "serif"
+}
+
+img{
+	width: 150px;
+	border-style: solid;
+	border-width: 2px;
+	padding: 2px;
+	border-color:darkslategray;
+}
