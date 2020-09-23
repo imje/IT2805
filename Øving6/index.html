@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tax Form</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <h1>Tax Form</h1>
+
+        <form name="my_tax_form" action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post">
+            Real name:<br>
+			<input type="text" name="name" pattern="[A-z\s]+" required> <br>
+            Gender:<br>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female" required> Female<br>
+            E-mail:<br>
+            <input type="email" name="email" required> <br>
+            Birthdate:<br>
+            <input type="date" name="birthdate" max="1987-12-31" required> <br>
+            Hero name:<br>
+            <input type="text" name="hero" required> <br>
+            Do you wear spandex?: <br>
+            <input type="radio" name="spandex" value="yes" required> Yes
+            <input type="radio" name="spandex" value="no" required> No <br>
+            Strength: <br>
+            <input type="number" name="strength" min="1" max="10" step="1" required> <br>
+            Speed: <br>
+            <input type="number" name="speed" min="1" max="10" step="1" required> <br>
+            Intelligence: <br>
+            <input type="number" name="intelligence" min="1" max="10" step="1" required> <br>
+            Income: <br>
+			<input  type="number" name="income" min="0" step="1" required oninput="taxes()"> <br>
+			Wealth: <br>
+			<input type="number" name="wealth" min="0" step="1" required oninput="taxes()"> <br>
+			Tax: <br>
+			<input type="number" name="tax" disabled value="0"> <br>
+			Submit tax form:
+            <input type="submit" name="submit" value="Submit">
+
+        </form>
+		
+		<script src = "script.js" ></script>
+    </body>
+</html>

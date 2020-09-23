@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: #CBD2D4;
+	text-align:center; 
+	margin: 20px;
+}
+
+h1{
+	text-transform: uppercase;
+	font-family: sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+	display: inline-block;
+	text-align: left;
+	position: relative;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	font-size: 1em;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+	padding: 15px 10px;
+	border: 1px #EBEBEB;
+	margin: 15px 0px;
+	border-radius: 5px;
+	
+}
+
+input[type=text], [type=email], [type=number], [type=date], [type=number]{
+	width: 400px;
+	background-color:whitesmoke;
+	border-style:inset;	
+}
+
+input[type=submit] {
+	width: 200px;
+	color: whitesmoke;
+	border-style: outset;
+	position: absolute;
+	right: 0;
+}
+
+form:valid input[type=submit] {
+  	background-color: cornflowerblue;
+	cursor: pointer;
+}
+
+form:valid input[type=submit]:hover {
+	background-color: royalblue;
+} 
+
+form:invalid input[type=submit] {
+	background-color:#6495ED;
+	opacity: 0.4;
+}
+
