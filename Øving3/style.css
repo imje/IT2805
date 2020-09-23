@@ -1,0 +1,28 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Part 4 */
+ul {
+	list-style-type:square;
+}
+
+li ul li:last-child{
+	color:seagreen;
+}
+.wrapper{
+	min-height: 100%;
+	margin-bottom: -35px;
+	position: relative;
+}
+
+footer{
+	height: 35px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: seagreen;
+}
