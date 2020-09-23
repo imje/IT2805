@@ -1,0 +1,7 @@
+1. Mobile phones usually ignore auto play on video elements to not use extra cellular download. 
+
+2. If the visitor is browsing on a device with 320 x 568 resolution the title will not show up on the screen.
+
+3. Some of the advantages of having a single responsive website instead of 
+dedicated versions like m.til.no for mobile and til.no for desktop are: There is only one website do maintain, one can see the website on all kind of devices, it costs less and it saves time.
+
