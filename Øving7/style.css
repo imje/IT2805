@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:#2A252C;
+	text-align:center; 
+	margin: 20px;	
+}
+
+h1 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: olivedrab;
+	font-size: 2.5em;
+	letter-spacing: 2px;
+}
+
+form {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: azure;
+	letter-spacing: 1px;
+}
+
+input[type=text]{
+	width: 400px;
+	background-color:whitesmoke;	
+	padding: 15px 10px;
+	margin: 15px 0px;
+	border-radius: 5px;
+	border: inset whitesmoke;
+}
+
+input[type=submit] {
+	width: 100px;
+	background-color: cornflowerblue;
+	border-radius:5px;
+	border: outset cornflowerblue; 
+	padding: 15px 10px;
+	margin: 15px 0px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #243D95;
+	border-color: #243D95;
+}
+
+input[type=submit]:active {
+	border: inset #243D95;
+}
+
+ul{
+	list-style: none;
+	position: absolute;
+  	left: 0;
+	text-align: left;
+	padding: 0px;
+}
+
+input[type=checkbox]:checked + label{
+	text-decoration: line-through;
+}
+
+

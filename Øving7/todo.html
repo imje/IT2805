@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<h1>To Do List</h1>
+	<form id="the_todo_form">
+		<output id="out"></output> <br> <!--output to show how many task out of the total that are completed-->
+		<input id="in" type="text" name="todo_in" placeholder="Type in task here..." required> <!--Text input to add new tasks-->
+		<input onClick="addTask()" id="sub" type="submit" name="submit" value="Add"> <br> <!--add button to add new task-->
+		<ul id="todoli"></ul> <!-- The list of all the tasks-->
+	</form>
+	
+	<script src="todo.js"></script>
+</body>
+</html>
